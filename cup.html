@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Swiper demo</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="assets/cup.css" />
+
+
+	</head>
+
+	<body>
+		<div class="footer">
+			<div>
+				<div class="relt">
+					<img src="assets/img/logo.png" height="100px" width="100px" />
+					<p>CATEGORIES</p>
+				</div>
+			</div>
+		</div>
+		<div class="bg-yellow"></div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="w-50">
+					<div class="buttons">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+					<div>
+						<p class="WHITE">WHITE COFFEE</p>
+						<p class="WHITE">₪20</p>
+						<p class="WHITE2">CONTAINS</p>
+						<li>Coffee</li>
+						<li>coffee</li>
+						<li>coffee</li>
+						<li>coffee</li>
+					</div>
+				</div>
+
+				<div class="container-slider">
+					<!-- Swiper -->
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="assets/img/Artboard 2 1.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/img/Artboard 2 1.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="assets/img/Artboard 2 1.png" alt="" />
+							</div>
+							<div class="swiper-slide"><img src="assets/img/cup.png" alt="" /></div>
+							<div class="swiper-slide"><img src="assets/img/cup.png" alt="" /></div>
+							<div class="swiper-slide"><img src="assets/img/cup.png" alt="" /></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				direction: "vertical",
+				slidesPerView: 3,
+				loop: true,
+				spaceBetween: 0,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				// Responsive breakpoints
+				// breakpoints: {
+				// 	// when window width is >= 320px
+				// 	320: {
+				// 		slidesPerView: 1,
+				// 	},
+				// 	// when window width is >= 480px
+				// 	480: {
+				// 		slidesPerView: 1,
+				// 	},
+				// 	// when window width is >= 640px
+				// 	640: {
+				// 		slidesPerView: 1,
+				// 	},
+				// },
+			});
+		</script>
+	</body>
+</html>

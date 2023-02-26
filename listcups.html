@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/style.css" />
+		<title>Coffee Shop</title>
+		<style>
+			body {
+				overflow: hidden;
+			}
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 10px;
+			}
+
+			.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Welcome Page -->
+		<section class="bg-body3">
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<button>deserts</button>
+					<button>list</button>
+					<button>list</button>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<div class="relt">
+						<!-- <button id="toggleBtn">Toggle</button> -->
+					
+						<img
+							src="assets/img/logo.png"
+							class="img2"
+							id="openModalBtn"
+							height="100px"
+							width="100px"
+						/>
+						<p>CATEGORIES</p>
+					</div>
+				</div>
+			</div>
+			<div class="flex-list">
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+			</div>
+
+			<div class="flex-list">
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+				<img src="assets/img/cuplist.png" height="200px" width="150px" alt="" />
+			</div>
+		</section>
+		<!-- Welcome Page -->
+		<script>
+			const openModalBtn = document.getElementById("openModalBtn");
+			const modal = document.getElementById("myModal");
+			const closeBtn = document.getElementsByClassName("close")[0];
+
+			openModalBtn.addEventListener("click", function () {
+				modal.style.display = "block";
+			});
+
+			closeBtn.addEventListener("click", function () {
+				modal.style.display = "none";
+			});
+
+			window.addEventListener("click", function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>
